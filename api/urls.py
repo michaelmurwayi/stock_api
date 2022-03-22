@@ -6,6 +6,7 @@ from rest_framework.routers import DefaultRouter
 # create router and register viewsets
 router = DefaultRouter()
 router.register(r'stocks', views.StockViewSet)
+router.register(r'Transactions', views.TransactionViewSet)
 
 # Automatically determined API urls
 

@@ -41,7 +41,7 @@ class Transactions(models.Model):
     price = models.IntegerField(default=0)
     type =  models.CharField(
         max_length=20,
-        choice = TYPE_CHOICES,
+        choices = TYPE_CHOICES,
         default= 'STORE'
     )
     discount = models.IntegerField(default=0)
